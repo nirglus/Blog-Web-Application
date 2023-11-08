@@ -1,3 +1,40 @@
 <%- include('partials/header.ejs') %>
-
+<div class="container">
+    <div class="row">
+  
+      <div class="col-md-3">
+        <div class="card" style="height: 100%;">
+          <div class="card-body">
+            <h5 class="card-title">Create a Post</h5>
+            <form action="/compose" method="post">
+              <div class="mb-3">
+                <label for="postTitle" class="form-label">Title</label>
+                <input type="text" class="form-control" id="postTitle" placeholder="Enter title">
+              </div>
+              <div class="mb-3">
+                <label for="postContent" class="form-label">Content</label>
+                <textarea class="form-control" id="postContent" rows="3" placeholder="Enter content"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+  
+      
+      <div class="col-md-3">
+        <div class="card" style="height: 100%;">
+          <div class="card-body d-flex flex-column">
+            <h6 class="card-subtitle mb-2 text-muted">Post Title</h6>
+            <p class="card-text">Post Content</p>
+            <div class="mt-auto">
+              <button class="btn btn-info me-2">Edit</button>
+              <button class="btn btn-danger">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+    </div>
+  </div>
 <%- include('partials/footer.ejs') %>
