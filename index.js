@@ -6,14 +6,26 @@ const port = 3000;
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+const posts = [];
+
 app.get("/", (req, res) =>{
-    res.render("index.ejs")
+    res.render("index.ejs", {posts: posts})
 });
 app.get("/about", (req, res) =>{
     res.render("about.ejs");
 });
 app.get("/contact", (req, res) =>{
     res.render("contact.ejs");
+});
+
+app.post("/", (req, res) =>{
+    let post = {
+        title: req.body.postTitle,
+        content: req.body.postContent
+    }
+    posts.push(post);
+    console.log(posts);
+    res.redirect("/")
 });
 
 
