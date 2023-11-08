@@ -5,6 +5,7 @@ $secondBg: #E2C799;
 main{
     height: 100vh;
     background-color: $bodyBg;
+    padding: 20px 20px;
 }
 nav{
     background-color: $headerBg;
@@ -26,4 +27,9 @@ footer{
     color: #fff;
     height: 10vh;
     background-color: $footerBg;
+}
+.list-inline{
+    .bi{
+        color: $footerBg;
+    }
 }

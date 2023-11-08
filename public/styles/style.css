@@ -1,6 +1,7 @@
 main {
   height: 100vh;
   background-color: #F2ECBE;
+  padding: 20px 20px;
 }
 
 nav {
@@ -23,4 +24,8 @@ footer {
   color: #fff;
   height: 10vh;
   background-color: #9A3B3B;
+}
+
+.list-inline .bi {
+  color: #9A3B3B;
 }/*# sourceMappingURL=style.css.map */
