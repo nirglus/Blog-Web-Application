@@ -28,6 +28,14 @@ app.post("/", (req, res) =>{
     res.redirect("/")
 });
 
+app.post("/remove/:index", (req, res) =>{
+    const index = req.params.index;
+    console.log(req.params);
+    if (index >= 0 && index < posts.length) {
+      posts.splice(index, 1); 
+    }
+    res.redirect("/");
+  });
 
 
 app.listen(port, () =>{
