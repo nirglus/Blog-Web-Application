@@ -1,7 +1,26 @@
+main {
+  height: 100vh;
+  background-color: #F2ECBE;
+}
+
 nav {
   background-color: #C08261;
+  color: #fff !important;
   padding: 20px 20px !important;
 }
 nav ul {
   margin-left: auto;
+}
+
+.nav-link:hover {
+  color: #E2C799 !important;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 10vh;
+  background-color: #9A3B3B;
 }/*# sourceMappingURL=style.css.map */

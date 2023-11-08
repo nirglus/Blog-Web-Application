@@ -2,6 +2,10 @@ $headerBg: #C08261;
 $footerBg: #9A3B3B;
 $bodyBg: #F2ECBE;
 $secondBg: #E2C799;
+main{
+    height: 100vh;
+    background-color: $bodyBg;
+}
 nav{
     background-color: $headerBg;
     color: #fff !important;
@@ -9,4 +13,17 @@ nav{
     ul{
         margin-left: auto;
     }
+}
+.nav-link{
+    &:hover{
+        color: $secondBg !important;
+    }
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 10vh;
+    background-color: $footerBg;
 }
