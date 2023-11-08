@@ -1,3 +1,7 @@
 nav {
   background-color: #C08261;
+  padding: 20px 20px !important;
+}
+nav ul {
+  margin-left: auto;
 }/*# sourceMappingURL=style.css.map */
