@@ -28,8 +28,10 @@
                         <h5 class="card-title"><%= post.title %></h5>
                         <p class="card-text"><%= post.content %></p>
                         <div class="d-flex mt-auto">
-                            <button class="btn btn-info me-2">Edit</button>
-                            <form class="remove-form" action="/remove/<%= index %>" method="post">
+                            <form class="edit-post" action="/edit/<%= index %>" method="post">
+                                <button type="submit" name="editBtn" class="btn btn-info me-2">Edit</button>
+                            </form>
+                            <form class="remove-post" action="/remove/<%= index %>" method="post">
                                 <button type="submit" name="delBtn" class="btn btn-danger">Delete</button>
                             </form>
                         </div>
