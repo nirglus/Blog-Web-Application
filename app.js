@@ -9,7 +9,7 @@ app.use(express.static("public"));
 const posts = [];
 
 app.get("/", (req, res) =>{
-    res.render("index.ejs", {posts: posts})
+    res.render("index1.ejs", {posts: posts})
 });
 app.get("/about", (req, res) =>{
     res.render("about.ejs");

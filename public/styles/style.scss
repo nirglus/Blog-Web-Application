@@ -3,9 +3,12 @@ $footerBg: #9A3B3B;
 $bodyBg: #F2ECBE;
 $secondBg: #E2C799;
 main{
-    height: 100vh;
     background-color: $bodyBg;
     padding: 20px 20px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
 }
 nav{
     background-color: $headerBg;
