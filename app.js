@@ -19,13 +19,15 @@ app.get("/contact", (req, res) =>{
 });
 
 app.post("/", (req, res) =>{
+    let date = new Date().toLocaleDateString();
     let post = {
         title: req.body.postTitle,
-        content: req.body.postContent
+        content: req.body.postContent,
+        date: date
     }
     posts.push(post);
     console.log(posts);
-    res.redirect("/")
+    res.redirect("/");
 });
 
 app.post("/remove/:index", (req, res) =>{

@@ -23,7 +23,7 @@
                 <p class="card-text"><%= post.content %></p>
             </div>
             <div class="card-footer d-flex justify-content-between">
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <p class="card-text"><small class="text-muted">Posted on <%= post.date %></small></p>
                 <div class="post-btns d-flex">
                     <form class="edit-post" action="/edit/<%= index %>" method="post">
                         <button type="submit" name="editBtn" class="btn btn-info me-2">Edit</button>
