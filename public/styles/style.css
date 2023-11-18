@@ -21,6 +21,10 @@ nav ul {
   color: #E2C799 !important;
 }
 
+.card {
+  background-color: #E2C799;
+}
+
 footer {
   display: flex;
   justify-content: center;
