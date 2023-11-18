@@ -26,7 +26,7 @@
                 <p class="card-text"><small class="text-muted">Posted on <%= post.date %></small></p>
                 <div class="post-btns d-flex">
                     <form class="edit-post" action="/edit/<%= index %>" method="post">
-                        <button type="submit" name="editBtn" class="btn btn-info me-2">Edit</button>
+                        <button type="submit" name="editBtn" class="btn edit me-2">Edit</button>
                     </form>
                     <form class="remove-post" action="/remove/<%= index %>" method="post">
                         <button type="submit" name="delBtn" class="btn btn-danger">Delete</button>

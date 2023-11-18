@@ -27,6 +27,13 @@ nav{
 .card{
     background-color: $secondBg;
 }
+.edit{
+    background-color: $bodyBg;
+    border: 0;
+    &:hover, &:active{
+        background-color:#efe597;
+    }
+}
 footer{
     display: flex;
     justify-content: center;

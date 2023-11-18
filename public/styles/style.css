@@ -25,6 +25,14 @@ nav ul {
   background-color: #E2C799;
 }
 
+.edit {
+  background-color: #F2ECBE;
+  border: 0;
+}
+.edit:hover, .edit:active {
+  background-color: #efe597;
+}
+
 footer {
   display: flex;
   justify-content: center;
