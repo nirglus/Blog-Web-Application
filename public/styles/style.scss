@@ -31,7 +31,14 @@ nav{
     background-color: $bodyBg;
     border: 0;
     &:hover, &:active{
-        background-color:#efe597;
+        background-color:#efe597 !important;
+    }
+}
+.btn-primary{
+    background-color: $footerBg;
+    border: 0;
+    &:hover, &:focus{
+        background-color: #753939 !important;
     }
 }
 footer{

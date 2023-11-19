@@ -30,7 +30,15 @@ nav ul {
   border: 0;
 }
 .edit:hover, .edit:active {
-  background-color: #efe597;
+  background-color: #efe597 !important;
+}
+
+.btn-primary {
+  background-color: #9A3B3B;
+  border: 0;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #753939 !important;
 }
 
 footer {
