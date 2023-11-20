@@ -25,6 +25,15 @@ nav ul {
   background-color: #E2C799;
 }
 
+.form-control {
+  background-color: #F2ECBE !important;
+  border: 0;
+}
+.form-control:focus {
+  border-color: #9A3B3B;
+  box-shadow: 0 0 0 0.2rem rgba(156, 59, 59, 0.25);
+}
+
 .edit {
   background-color: #F2ECBE;
   border: 0;

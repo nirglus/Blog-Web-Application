@@ -27,6 +27,14 @@ nav{
 .card{
     background-color: $secondBg;
 }
+.form-control{
+    background-color: #F2ECBE !important;
+    border: 0;
+    &:focus{
+        border-color: $footerBg;
+        box-shadow: 0 0 0 0.2rem rgba(156, 59, 59, 0.25);
+    }
+}
 .edit{
     background-color: $bodyBg;
     border: 0;
